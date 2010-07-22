@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Load stuff through "Ajax" (different domain, take 1) - Pocket JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="crossdomain1.css" />
+  <script type="text/javascript" src="../../prototype.js"></script>
+  <script type="text/javascript" src="crossdomain1.js"></script>
+</head>
+<body>
+<h1>Load stuff through "Ajax" (different domain, take 1)</h1>
+
+<p>This page is accessed trough a first domain (whatever you’re loading it from…).  It will access content from another domain (<tt>xdr.pocketjavascript.com</tt>) through Ajax</p>
+
+<p><a id="triggerXHR" href="http://xdr.pocketjavascript.com/server/crossdomain1/xdr_response.php">Click here to try through <tt>XMLHttpRequest</tt></a>. (this will work in Firefox 3.5+, Safari 4+ and Chrome 4+  -- IE8 would need custom code.)</p>
+
+<p><a id="triggerSSP" href="http://xdr.pocketjavascript.com/server/crossdomain1/xdr_response.php">Click here to try through a server-side proxy</a>. (this works everywhere.)</p>
+
+<p><a id="triggerDF1" href="http://xdr.pocketjavascript.com/server/crossdomain1/xdr_response_df1.php">Click here to try through dynamically-generated form and hidden <code>&lt;iframe/&gt;</code></a>. (this works everywhere.)</p>
+
+<p><a id="triggerDF2" href="http://xdr.pocketjavascript.com/server/crossdomain1/xdr_response_df2.php">Click here to try through a dynamically-generated form</a> (we expect a 204 response). (this works everywhere.)</p>
+
+<p class="note">(Your in-browser network monitoring tools may not pickup the request/response on that last link, and your browser won’t mark the link as visited—it was actually <em>not</em> visited!  However, regular network sniffing, or trying out this on your own server, will prove the request goes out and the 204 comes back.)</p>
+
+<div id="responses"></div>
+
+</body>
+</html>

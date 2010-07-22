@@ -1,0 +1,10 @@
+tt, code { font-size: 90%; color: green; }
+p.note { font-style: italic; color: #666; width: 50em; }
+p.note em { font-style: normal; }
+
+table {
+  border: 2px solid gray; border-collapse: collapse; margin: 1em 0;
+  font-family: sans-serif;
+}
+thead th { background: gray; color: white; }
+th, td { border: 1px solid gray; padding: 0.2em 0.5em; }

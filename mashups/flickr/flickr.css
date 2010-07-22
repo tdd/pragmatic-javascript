@@ -1,0 +1,13 @@
+.clear { clear: both; }
+
+#indicator {
+  font-family: sans-serif; color: gray; padding-left: 20px;
+  height: 16px; line-height: 16px; background: transparent none left center no-repeat;
+}
+#indicator.loading { font-style: italic; background-image: url(spinner.gif); }
+
+#flickrStream {
+  list-style-type: none; margin: 0; padding-left: 20px; width: 800px;
+}
+#flickrStream li { float: left; margin: 0 5px 3px 0; }
+#flickrStream img { border: none; }

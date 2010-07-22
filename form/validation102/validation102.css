@@ -1,0 +1,15 @@
+#registration { font-family: sans-serif; }
+#registration p { margin: 0 0 0.5em; }
+#registration label { display: inline-block; width: 8em; }
+#registration .radios { padding-left: 8.2em; }
+#registration .radios label { width: auto; }
+
+#registration p.missing { color: maroon; }
+#registration p.missing label { font-weight: bold; }
+#registration p.missing input.text,
+#registration p.missing textarea { border: 1px solid maroon; background: #fdd; }
+
+#registration p.invalid { color: purple; }
+#registration p.invalid label { font-weight: bold; }
+#registration p.invalid input.text,
+#registration p.invalid textarea { border: 1px solid purple; background: #fdf; }

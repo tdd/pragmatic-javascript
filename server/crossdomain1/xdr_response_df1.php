@@ -1,0 +1,1 @@
+<p>Yow…  You’ll never see this, as there is no way to safely access the parent window’s DOM or its scripting environment :-/</p>

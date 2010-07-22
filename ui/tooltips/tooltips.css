@@ -1,0 +1,29 @@
+/* START:MAIN */
+#files li { position: relative; }
+#files li .tooltip {
+  position: absolute; top: 8px; left: 120px; width: 24em;
+  z-index: 1; display: none;
+  /* IE6 doesn't know li:hover, so we need to toggle via JS,
+     therefore avoiding in-rule display: none */
+  _display: block;
+  border: 1px solid gray; 
+  background: #fffdc3 url(bg_tooltip.png) top left repeat-x;
+}
+#files li:hover .tooltip,
+#files li:focus .tooltip { display: block; } 
+/* END:MAIN */
+
+/* The styling below is just polish, not necessary within the book itself,
+   so I put it in separate rules to keep the book's content focused. */
+#files li {
+  font-family: sans-serif; font-size: small;
+  width: 20em; cursor: default;
+}
+#files li .tooltip {
+  padding: 0.5em 0.5em 0; color: #555;
+  /* Extra polish for CSS3-compatible implementations (Saf3.1+, FF3.5+, future!)… */
+  -webkit-box-shadow: 1px 1px 7px gray;
+  -moz-box-shadow:    1px 1px 7px gray;
+  box-shadow:         1px 1px 7px gray;
+}
+#files li .tooltip p { margin: 0 0 0.5em; }

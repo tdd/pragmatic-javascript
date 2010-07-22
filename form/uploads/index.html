@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Looking snappy (at first) with dynamic multiple file uploads - Pocket JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="uploads.css" />
+  <script type="text/javascript" src="../../prototype.js"></script>
+  <script type="text/javascript" src="uploads.js"></script>
+</head>
+<body>
+<h1>Looking snappy (at first) with dynamic multiple file uploads</h1>
+<p>Use the file selector below as many times as you want.</p>
+<!-- START:main -->
+<form method="post" action="server.php" enctype="multipart/form-data">
+  <ul id="uploads"></ul>
+  <p><input type="file" name="files[]" id="filSelector" /></p>
+  <p><input type="submit" value="Send these files" /></p>
+</form>
+<!-- END:main -->
+</body>
+</html>

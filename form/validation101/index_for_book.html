@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Validating forms: the basics - Pocket JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="validation101.css" />
+  <script type="text/javascript" src="../../prototype.js"></script>
+  <script type="text/javascript" src="validation101.js"></script>
+</head>
+<body>
+<h1>Validating forms: the basics</h1>
+<!-- START:main -->
+<form id="registration">
+  <p>
+    <label for="user_first_name">First name*</label>
+    <input type="text" name="user[first_name]" id="user_first_name"
+     class="required text" />
+  </p>
+  <!-- …more fields… -->
+  <p class="radios">
+    <input type="checkbox" id="terms" name="terms" class="required" />
+    <label for="terms">I accept the terms of service*</label>
+  </p>
+  <p><input type="submit" value="Sign me up!" /></p>
+</form>
+<!-- END:main -->
+<p><em>* mandatory fields</em></p>
+</body>
+</html>

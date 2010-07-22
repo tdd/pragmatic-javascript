@@ -1,0 +1,5 @@
+body { width: 40em; margin: 0 auto; padding: 1em; border: 1px solid gray; border-width: 0 1px; }
+#footer {
+  margin: 2em 0 6em; border-top: 1px solid gray; padding-top: 0.5em;
+  text-align: center; font-family: sans-serif; color: gray; font-size: 0.8em;
+}

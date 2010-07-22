@@ -1,0 +1,41 @@
+.clear { clear: both; }
+
+#indicator {
+  font-family: sans-serif; color: gray; padding-left: 20px;
+  height: 16px; line-height: 16px; background: transparent none left center no-repeat;
+}
+#indicator.loading { font-style: italic; background-image: url(spinner.gif); }
+
+#user { padding-left: 20px; padding-bottom: 1em; }
+#user img {
+  float: left; margin-right: 0.5em;
+  border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px;
+  -webkit-box-shadow: 3px 3px 5px gray; -moz-box-shadow: 3px 3px 5px gray;
+}
+#user .name { font-weight: bold; font-family: Georgia, serif; margin: 0; }
+#user .name .details { font-size: 90%; font-style: italic; color: silver; font-weight: normal; }
+#user .counters { font-size: 90%; color: #777; font-family: sans-serif; margin-top: 0.2em; }
+
+#twitterStream {
+  list-style-type: none; margin: 0; padding-left: 20px; width: 30em;
+  font-family: Georgia, serif; font-size: 14px;
+}
+#twitterStream li { margin: 0; padding: 0.4em 0 0.1em; border-top: 1px solid #ddd; }
+#twitterStream p { margin: 0 0 0.2em; }
+#twitterStream .calendar {
+  float: left; width: 64px; height: 60px; margin-right: 0.5em; position: relative;
+  font-family: sans-serif; font-size: 17px; font-weight: bold;
+  background: transparent url(calendar_empty.png) left bottom no-repeat;
+}
+#twitterStream .calendar .day { position: absolute; right: 12px; top: 26px; }
+#twitterStream .calendar .month {
+  position: absolute; left: 10px; top: 29px; font-size: 11px; color: #bd231b; text-transform: uppercase;
+  -webkit-transform: rotate(270deg) scale(0.9) translateY(-3px); -webkit-transform-origin: center center;
+  -moz-transform: rotate(270deg) scale(0.9) translateY(-3px); -moz-transform-origin: center center;
+}
+
+#footer {
+  margin: 2em 0 1em; color: silver; border-top: 1px solid silver; padding-top: 0.2em;
+  font-family: sans-serif; font-size: 80%;
+}
+#footer a { color: gray; }

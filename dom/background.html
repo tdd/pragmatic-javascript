@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script type="text/javascript" src="../prototype.js"></script>
+  <script type="text/javascript" src="background.js"></script>
+  <title>Simulating background processing - Pocket JavaScript</title>
+  <style type="text/css">
+  #progress {
+    border: 2px solid gray; text-align: center;
+    background: white; color: black; position: relative; width: 30em;
+    font-family: sans-serif;
+  }
+  #progress.over50 { color: white; }
+  #progress .visual {
+    position: absolute; left: 0; top: 0; height: 100%; width: 0;
+    background: green; z-index: 1;
+  }
+  #progress .figure { position: relative; z-index: 2; font-weight: bold; }
+  </style>
+</head>
+<body>
+<h1>Simulating background processing</h1>
+<!-- START:MAIN -->
+<p id="progress">
+  <span class="visual"></span>
+  <span class="figure">0%</span>
+</p>
+<p>
+  <input type="button" id="btnToggle" value="Toggle" />
+  <input type="button" id="btnOtherTask" value="Do some other stuff" />
+</p>
+<!-- END:MAIN -->
+</body>
+</html>

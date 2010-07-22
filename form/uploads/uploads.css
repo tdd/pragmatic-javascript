@@ -1,0 +1,12 @@
+#uploads {
+  list-style-type: none; margin: 1em 0; padding: 0; font: 12px sans-serif;
+}
+#uploads li {
+  height: 16px; line-height: 16px; margin: 0 0 0.3em; padding-left: 20px;
+  background: transparent url(page_white.png) left top no-repeat;
+}
+#uploads input { display: none; }
+#uploads img { vertical-align: bottom; padding-left: 0.2em; border: none; }
+#uploads li.word { background-image: url(page_word.png); }
+#uploads li.image { background-image: url(picture.png); }
+#uploads li button { border: none; width: auto; background: transparent; }

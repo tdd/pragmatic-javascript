@@ -1,0 +1,12 @@
+form { font-family: sans-serif; }
+form .p { margin: 0 0 0.5em; position: relative; }
+#local { z-index: 1; }
+form label { display: inline-block; width: 7em; }
+form input.text { width: 14em; }
+/* START:main */
+.completions { border: 1px solid silver; background: white; font-size: 80%; z-index: 2; }
+.completions ul { margin: 0; padding: 0; list-style-type: none; }
+.completions li { line-height: 1.5em; white-space: nowrap; overflow: hidden; }
+.completions li.selected { background: #ffa; }
+.completions strong { color: green; }
+/* END:main */

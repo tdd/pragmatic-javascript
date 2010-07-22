@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Validating forms: going further - Pocket JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="validation102.css" />
+  <script type="text/javascript" src="../../prototype.js"></script>
+  <script type="text/javascript" src="validation102.js"></script>
+</head>
+<body>
+<h1>Validating forms: going further</h1>
+<form id="registration">
+  <p>
+    <label for="user_first_name">First name*</label>
+    <input type="text" name="user[first_name]" id="user_first_name"
+     class="required text" />
+  </p>
+  <p>
+    <label for="user_last_name">Last name*</label>
+    <input type="text" name="user[last_name]" id="user_last_name"
+     class="required text" />
+  </p>
+  <p>
+    <label for="user_nickname">Nickname</label>
+    <input type="text" name="user[nickname]" id="user_nickname" />
+  </p>
+  <!-- START:main -->
+  <p>
+    <label for="user_email">Email*</label>
+    <input type="text" name="user[email]" id="user_email"
+     class="required text email" />
+  </p>
+  <p>
+    <label for="user_favnumber">Favorite number</label>
+    <input type="text" name="user[favnumber]" id="user_favnumber"
+     class="text number" />
+  </p>
+  <!-- END:main -->
+  <p class="radios">
+    <input type="checkbox" id="terms" name="terms" value="yes"
+     class="required" />
+    <label for="terms">I accept the terms of service*</label>
+  </p>
+  <p><input type="submit" value="Sign me up!" /></p>
+</form>
+</body>
+</html>

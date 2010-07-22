@@ -1,0 +1,11 @@
+img { border: none; }
+#products { margin: 0; padding: 0; }
+#products li {
+  list-style-type: none; float: left;
+  margin-left: 1em; padding: 0.25em 0.5em; border: 1px solid silver;
+  font-family: sans-serif; text-align: center;
+}
+#products img { display: block; }
+#products li h2 { font-size: 100%; }
+#products li a { text-decoration: none; }
+#products li a span { text-decoration: underline; }

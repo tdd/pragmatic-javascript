@@ -1,0 +1,14 @@
+h1 { font-family: sans-serif; margin: 0; }
+h2 { clear: both; font-family: sans-serif; color: #8ac; padding-top: 1em; margin: 0 0 1em; }
+img { border: 0; }
+
+#thumbnails { margin: 0; padding: 0; }
+#thumbnails li {
+  list-style-type: none; float: left; margin: 0 0 0 1em;
+  border: 10px solid #ddd; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+}
+
+#related li {
+  list-style-type: square;
+  font-family: sans-serif; color: gray; margin-bottom: 0.25em;
+}

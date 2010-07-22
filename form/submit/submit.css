@@ -1,0 +1,7 @@
+label { display: block; }
+/* START:submitting */
+form.submitting input.submit {
+  color: silver;
+  background: transparent url(spinner.gif) center center no-repeat;
+}
+/* END:submitting */

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Creating a lightbox effect - Pocket JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="lightbox.css" />
+  <!-- START:setup -->
+  <link rel="stylesheet" type="text/css"
+    href="vendor/fancybox/jquery.fancybox-1.2.6.css" />
+  <script type="text/javascript" src="vendor/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript"
+    src="vendor/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
+  <!-- END:setup -->
+  <script type="text/javascript" src="lightbox.js"></script>
+</head>
+<body>
+<h1>Creating a lightbox effect</h1>
+
+<h2>Individually</h2>
+
+<ul id="thumbnails">
+  <li>
+    <!-- START:main -->
+    <a href="beach_normal.jpg" title="A gorgeous beach">
+      <img src="beach.jpg" alt="Beach" />
+    </a>
+    <!-- END:main -->
+  </li>
+  <li><a href="feline_normal.jpg" title="A cute cub"><img src="feline.jpg" alt="Feline" /></a></li>
+  <li><a href="fruits_normal.jpg" title="Yummy fruits"><img src="fruits.jpg" alt="Fruits" /></a></li>
+  <li><a href="river_normal.jpg" title="A frothy river"><img src="river.jpg" alt="River" /></a></li>
+</ul>
+
+<h2>As a group (use arrow keys once the lightbox is up)</h2>
+
+<ul id="thumbnails">
+  <!-- START:group -->
+  <li>
+    <a href="beach_normal.jpg" rel="demo" title="A gorgeous beach">
+      <img src="beach.jpg" alt="Beach" />
+    </a>
+  </li>
+  <li>
+    <a href="feline_normal.jpg" rel="demo" title="A cute cub">
+      <img src="feline.jpg" alt="Feline" />
+    </a>
+  </li>
+  <!-- END:group -->
+  <li><a href="fruits_normal.jpg" rel="demo" title="Yummy fruits"><img src="fruits.jpg" alt="Fruits" /></a></li>
+  <li><a href="river_normal.jpg" rel="demo" title="A frothy river"><img src="river.jpg" alt="River" /></a></li>
+</ul>
+
+<h2>Attributions &amp; alternatives</h2>
+
+<ul id="related">
+  <li><a href="http://fancybox.net/">FancyBox</a> is a sweet jQuery plugin by Janis Skarnelis</li>
+  <li><a href="http://colorpowered.com/colorbox/">ColorBox</a> is another nice jQuery plugin</li>
+  <li><a href="http://www.huddletogether.com/projects/lightbox2/">Lightbox 2</a> is a Prototype-based alternative</li>
+  <li><a href="http://www.shadowbox-js.com/">ShadowBox</a> is standalone and fairly powerful, but not free for all uses.</li>
+  <li>
+    <a href="http://www.flickr.com/photos/vincealongi/2220611397/">Beach photo</a> © 2008 Vincent Alongi,
+    <a href="http://www.flickr.com/photos/tambako/3485488681/">feline photo</a> © 2009 Emmanuel “Tambako” Keller,
+    <a href="http://www.flickr.com/photos/hamed/1552383685/">fruits photo</a> © 2007 Hamed Saber,
+    <a href="http://www.flickr.com/photos/steve_steady64/1426454467/">river photo</a> © 2007 Steve Gatto.<br/>
+    All photos provided under compatible Creative Commons licences.
+  </li>
+</ul>
+</body>
+</html>

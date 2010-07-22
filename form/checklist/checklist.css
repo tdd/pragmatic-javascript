@@ -1,0 +1,12 @@
+#mailbox {
+  font: 12px sans-serif;
+  border: 1px solid silver; border-collapse: collapse;
+}
+#mailbox td, #mailbox th {
+  padding: 0.1em 1em 0.1em 0.2em; text-align: left;
+  border: 1px solid #ccc; border-width: 1px 0;
+}
+#mailbox thead th { background: silver; }
+#mailbox tbody tr { height: 16px; }
+#mailbox tbody tr.alternate td { background: #eee; }
+#mailbox .size { text-align: right; }
