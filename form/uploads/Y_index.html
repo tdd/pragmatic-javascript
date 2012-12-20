@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Looking snappy (at first) with dynamic multiple file uploads - Pocket JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="uploads.css" />
+    <style type="text/css">
+        .yui3-uploader,#uploadFilesButtonContainer{
+            display: inline-block;
+        }
+    </style>
+    <script type="text/javascript" src="../../../yui/build/yui/yui-min.js"></script>
+    <script type="text/javascript" src="Y_uploads.js"></script>
+</head>
+<body class="yui3-skin-sam">
+<h1>Looking snappy (at first) with dynamic multiple file uploads</h1>
+<p>Use the file selector below as many times as you want.</p>
+<!-- START:main -->
+    <div id="ddmessage"></div>
+    <ul id="uploads">
+
+    </ul>
+    <div id="filSelector"></div>
+    <div id="uploadFilesButtonContainer">
+    <input type="submit" id="uploadFilesButton" value="Send these files" class="yui3-button" style="width: 150px;height: 30px"/>
+    </div>
+<!-- END:main -->
+</body>
+</html>

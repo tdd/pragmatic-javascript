@@ -10,14 +10,14 @@
   // END:callback
   window.injectData = injectData;
   
-  function loadJSONPBasic(e) {
+/*  function loadJSONPBasic(e) {
     e.stop(); this.blur();
     // START:jsonp1
     document.documentElement.firstChild.appendChild(
       new Element('script', { type: 'text/javascript',
         src: this.href + '&r=' + Math.random() }));
     // END:jsonp1
-  }
+  }*/
   
   function loadJSONP(e) {
     e.stop(); this.blur();

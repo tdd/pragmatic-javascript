@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Load stuff through "Ajax" (different domain, take 2) - Pocket JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="crossdomain2.css" />
+    <script type="text/javascript" src="../../../yui/build/yui/yui-min.js"></script>
+    <script type="text/javascript" src="csshttprequest.min.js"></script>
+    <script type="text/javascript" src="Y_crossdomain2.js"></script>
+</head>
+<body>
+<h1>Load stuff through "Ajax" (different domain, take 2)</h1>
+
+<p>This page is accessed trough a first domain (whatever you’re loading it from…).  It will access content from another domain (<tt>xdr.pocketjavascript.com</tt>) through Ajax</p>
+
+<p><a id="triggerJSONP" href="xdr_response_jsonp.php">Click here to grab stuff through JSON-P</a>.</p>
+
+<p><a id="triggerYQLget" href="http://github.com/languages/Ruby/updated">Click here to grab contents through YQL’s <tt>html</tt> table</a>.</p>
+
+<p><a id="triggerYQLpost" href="http://isithackday.com/hacks/htmlpost/index.php">Click here to POST a form and get results back through YQL’s <tt>htmlpost</tt> table</a>.</p>
+
+<p><a id="triggerCHR" href="http://local.pocketjavascript.net/server/crossdomain2/xdr_response_chr.php">Click here to grab stuff through the so-called <em>CSSHttpRequest</em></a>. (this doesn't seem to work on Safari 5, though.)</p>
+
+<div id="responses"></div>
+
+</body>
+</html>

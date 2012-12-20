@@ -1,8 +1,8 @@
 (function() {
   // START:basic
-  function preventMultipleSubmits() {
+  /*function preventMultipleSubmits() {
     this.select('.submit').invoke('disable');
-  }
+  }*/
   
   document.observe('dom:loaded', function() {
     $('commentForm').observe('submit', preventMultipleSubmits);

@@ -43,7 +43,7 @@
   // Get full example code at http://pragprog.com/titles/pg_js/source_code
   
   function getGeoPhotos(lat, lon) {
-    $('indicator').addClassName('loading').show();
+//    $('indicator').addClassName('loading').show();
     var uri = FLICKR_ENDPOINT + '?' + Object.toQueryString({
       // START_HIGHLIGHT
       method: 'flickr.photos.search', api_key: FLICKR_API_KEY,

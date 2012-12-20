@@ -6,7 +6,7 @@
     var ext = (fileName.match(/\.(.+?)$/) || [])[1].toString().toLowerCase();
     return (ICONS.detect(function(pair) { return pair[1].include(ext); }) || [])[0];
   }
-  
+
   function handleQueueRemoval(e) {
     var trigger = e.findElement('button');
     trigger && trigger.up('li').remove();

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Providing on-the-fly help tooltips on forms - Pocket JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="tooltips.css" />
+    <script type="text/javascript" src="../../../yui/build/yui/yui-min.js"></script>
+    <script type="text/javascript" src="Y_tooltips.js"></script>
+</head>
+<body>
+<h1>Providing on-the-fly help tooltips on forms</h1>
+<form id="registration">
+    <!-- START:main -->
+    <p>
+        <label for="user_login">
+            Login*
+      <span class="tooltip" style="display: none;">
+        Logins must be unique, at least 3 characters long,
+        and may only use letters, numbers, white space,
+        hyphens, underscores and periods.
+      </span>
+        </label>
+        <input type="text" id="user_login" name="user[login]"
+               class="required text" />
+    </p>
+    <!-- END:main -->
+    <p>
+        <label for="user_password">
+            Password*
+      <span class="tooltip" style="display: none;">
+        Passwords must be at least 8 characters long and
+        must contain a mix of uppercase and lowercase letters,
+        digits and symbols.
+      </span>
+        </label>
+        <input type="password" id="user_password" name="user[password]"
+               class="required text" />
+    </p>
+    <p>
+        <label for="user_first_name">First name*</label>
+        <input type="text" id="user_first_name" name="user[first_name]"
+               class="required text" />
+    </p>
+    <p>
+        <label for="user_last_name">Last name*</label>
+        <input type="text" id="user_last_name" name="user[last_name]"
+               class="required text" />
+    </p>
+    <p><input type="submit" value="Sign up" /></p>
+</form>
+</body>
+</html>

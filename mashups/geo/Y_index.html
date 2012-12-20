@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Getting geocoding for a location and photos taken there - Pocket JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="geo.css" />
+    <script type="text/javascript" src="../../../yui/build/yui/yui-min.js"></script>
+    <script type="text/javascript" src="placemaker.js"></script>
+    <script type="text/javascript" src="Y_geo.js"></script>
+</head>
+<body>
+<h1>Getting geocoding for a location and photos taken there</h1>
+
+<form id="geoSearch">
+    <p>
+        <label for="edtText">Type a city/country name or full address:</label>
+        <input type="text" id="edtText" />
+        then hit
+        <input type="submit" value="Search" />
+    </p>
+</form>
+
+<p id="indicator" style="display: none;">Loading Flickr photos for <span class="loc"></span>…</p>
+
+<ul id="flickrStream"></ul>
+
+</body>
+</html>

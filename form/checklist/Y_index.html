@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>(Un)checking a whole set of checkboxes at once - Pocket JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="checklist.css" />
+    <script type="text/javascript" src="../../../yui/build/yui/yui-min.js"></script>
+    <script type="text/javascript" src="Y_checklist.js"></script>
+</head>
+<body>
+<h1>(Un)checking a whole set of checkboxes at once</h1>
+<form>
+    <table id="mailbox">
+        <thead>
+        <tr>
+            <th><input type="checkbox" id="toggler" /></th>
+            <th>Subject</th>
+            <th>Date</th>
+            <th>From</th>
+            <th class="size">Size</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox" name="mail_ids[]" value="1" /></td>
+            <td>Happy new year!</td>
+            <td>Jan 1, 2010 00:03am</td>
+            <td>Drew Barrimore</td>
+            <td class="size">1.6Kb</td>
+            <td></td>
+        </tr>
+        <tr class="alternate">
+            <td><input type="checkbox" name="mail_ids[]" value="2" /></td>
+            <td>What’s that great IT book publisher again?</td>
+            <td>Jan 1, 2010 11:25am</td>
+            <td>David McClintock</td>
+            <td class="size">2.3Kb</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="mail_ids[]" value="3" /></td>
+            <td>You gotta check this out…</td>
+            <td>Jan 2, 2010 02:15pm</td>
+            <td>Julianne Moore</td>
+            <td class="size">4.2Kb</td>
+            <td><img src="attachment.png" /></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
